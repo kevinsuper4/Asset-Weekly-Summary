@@ -19,6 +19,20 @@ Read [summary-rules.md](references/summary-rules.md) before drafting the final w
 
 ## Workflow
 
+0. Ensure the `dws` CLI is available before any DingTalk step:
+   - Run `command -v dws` or `dws --version`.
+   - If `dws` is missing, install it from the official DingTalk Workspace CLI repository (`DingTalk-Real-AI/dingtalk-workspace-cli`) before continuing.
+   - macOS/Linux install:
+     ```bash
+     curl -fsSL https://raw.githubusercontent.com/DingTalk-Real-AI/dingtalk-workspace-cli/main/scripts/install.sh | sh
+     ```
+   - Windows PowerShell install:
+     ```powershell
+     irm https://raw.githubusercontent.com/DingTalk-Real-AI/dingtalk-workspace-cli/main/scripts/install.ps1 | iex
+     ```
+   - After installation, run `dws auth login`; in headless environments, use `dws auth login --device`.
+   - Verify the CLI works before running the remaining workflow.
+
 1. Find the meeting window from DingTalk calendar:
    - Query calendar events around the current date.
    - Keep only events whose `summary` is exactly `选品周会`.
