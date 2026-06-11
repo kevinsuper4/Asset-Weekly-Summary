@@ -1,0 +1,4 @@
+interface:
+  display_name: "资产周会纪要"
+  short_description: "按钉钉日历、AI听记和群调研纪要生成资产优选周会纪要"
+  default_prompt: "根据选品周会生成资产优选周会纪要"
