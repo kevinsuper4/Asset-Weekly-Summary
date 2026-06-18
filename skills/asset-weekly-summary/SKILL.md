@@ -58,12 +58,16 @@ Read [summary-rules.md](references/summary-rules.md) before drafting the final w
 4. Select AI minutes for non-product sections:
    - If the user specifies an AI minutes item, use that specified item.
    - If the user does not specify one, read the most recent AI minutes whose title is exactly `选品周会`.
+   - Read the selected AI minutes summary first, then read the transcription when the summary is too coarse for business-support or capability details.
    - Use the selected AI minutes mainly to draft:
      - `2、业务支持`
      - `3、能力提升`
-   - Make these two sections concise but not empty. Use one compact sentence for a simple section; use at most 2 short bullets only when a section has clearly separate points.
+   - For `2、业务支持`, extract concrete business items from the AI minutes: rules, BD/client communication, campaign preparation, product-line operations, risk controls, dashboard/monitoring, issue reviews, visit/talking-point preparation, and follow-up actions.
+   - Classify business items into `余额宝战场`, `稳健战场`, `权益战场`, and `黑卡理财师`; keep 1-4 short numbered items per battlefield when the minutes contain enough detail.
+   - For `3、能力提升`, extract concrete capability improvements: dashboards, data-source upgrades, AI/Skills automation, analysis tooling, monitoring automation, process standardization, and onboarding/training; keep 3-5 short numbered items when available.
+   - Keep these two sections concise, but do not flatten multiple concrete AI-minutes items into one generic sentence.
    - Do not mention personal names in these two sections; use roles or teams only when necessary.
-   - Exclude product research items, product-specific conclusions, and market views from these two sections. Keep only business progress, rules/processes, operational support, data/tool capability, staffing, and workflow improvements.
+   - Exclude product research items, fund-manager views, asset-allocation opinions, and market views from these two sections. Product-line names and business-operation product names may be included only when they are part of operational progress, rules, monitoring, campaign preparation, or issue reviews in the AI minutes.
    - Do not use AI minutes product-research content for `1、产品调研` unless the user explicitly changes the rule.
 
 5. Draft the final summary:

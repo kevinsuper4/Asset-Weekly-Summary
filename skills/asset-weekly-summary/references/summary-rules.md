@@ -62,12 +62,43 @@
 - If the user specifies an AI minutes item, use the specified item.
 - If the user does not specify one, read the most recent AI minutes whose title is exactly `选品周会`.
 - Draft `2、业务支持` and `3、能力提升` mainly from the selected AI minutes.
-- Make `2、业务支持` and `3、能力提升` concise but useful. Prefer one compact sentence under each battlefield/capability theme; use at most 2 short bullets only when the points are clearly separate.
+- Read the AI minutes summary to identify topics, then read the transcription when the summary does not preserve enough business detail.
+- Make `2、业务支持` and `3、能力提升` concise but accurate. Do not compress multiple concrete AI-minutes items into one vague sentence.
 - Do not mention personal names in `2、业务支持` or `3、能力提升`; use roles or teams only when necessary.
 - Avoid over-splitting into many bullets.
-- Do not include product research products, product-specific conclusions, fund manager views, asset allocation opinions, funding/market trend judgments, or market观点 in `2、业务支持` or `3、能力提升`.
+- Do not include product research products, product-specific research conclusions, fund manager views, asset allocation opinions, funding/market trend judgments, or market观点 in `2、业务支持` or `3、能力提升`.
+- Product-line names and business-operation product names may appear only when they are part of rules, campaign preparation, monitoring, issue reviews, business follow-up, or tool/process progress from the AI minutes.
 - Keep non-product sections focused on business support, rules/process progress, operational coordination, data/tool capability, staffing, and workflow improvement.
 - Do not use AI minutes product-research content for `1、产品调研` unless the user explicitly changes that rule.
+
+## Business Support Extraction
+
+For `2、业务支持`, extract concrete business items from the AI minutes and classify them into:
+
+- `余额宝战场`
+- `稳健战场`
+- `权益战场`
+- `黑卡理财师`
+
+Keep 1-4 short numbered items under each battlefield when available. Prefer items that contain:
+
+- Rule or policy changes, BD/client communication, campaign preparation, product-line operations, risk controls, monitoring, issue reviews, visit preparation, talking points, or next actions.
+- Concrete business nouns from the AI minutes, such as battlefield names, product-line names, dashboards, campaigns, rules, lists, capacity, and monitoring.
+- Clear action/result wording: `推进`, `上线`, `复盘`, `沟通`, `确认`, `储备`, `测算`, `整理`, `调整`, `接入`, `优化`.
+
+If a battlefield has no clear item in the AI minutes, write one short line such as `本次未提及明确新增事项` instead of inventing content.
+
+## Capability Improvement Extraction
+
+For `3、能力提升`, extract 3-5 short numbered items from the AI minutes when available. Prefer:
+
+- Dashboard or monitoring builds and upgrades.
+- Data-source replacement, SQL/query automation, formula automation, and visualization improvements.
+- AI analysis, Skills automation, weekly-summary automation, and process standardization.
+- Research-note integration into dashboards or workflows.
+- Onboarding, training, and reusable working methods.
+
+Each item should name the concrete capability or deliverable first, then the progress or purpose. Avoid generic wording like `提升效率` unless the AI minutes include the concrete mechanism.
 
 ## Product Research Structure
 
